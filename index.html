@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fogo Doom</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                border: 1px solid #fff;
+            }
+
+            td{
+                width: 50px;
+                height: 50px;
+                border: 1px solid #000;
+                text-align: center;
+                vertical-align: center;
+                font-family: monospace;
+                font-size: 18px;
+                position: relative;
+            }
+
+            .pixel-index{
+                font-size: 10px;
+                display: inline-block;
+                position: absolute;
+                top: 20px;
+                right: 2px;
+                color: #999;
+            }
+
+            td.pixel{
+                width: 4px;
+                height: 4px;
+                border: 0;
+            }
+
+            #firecanvas{
+                position: relative;
+            }
+
+            .btn{
+                border-radius: 10px;
+                background-color: orangered;
+                font-size: 18px;
+                padding: 10px;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body style="background-color: #000;">
+        <center><div id="fireCanvas"></div></center>
+        <center><button onclick="start()" class="btn">Acender</button></center>
+        <script src="Fire.js"></script>
+    </body>
+</html>
